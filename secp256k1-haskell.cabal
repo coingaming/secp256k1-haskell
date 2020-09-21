@@ -4,7 +4,7 @@ cabal-version: 2.0
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 911c4f6cd260a60f86d8394bdda0aa90dc6cb66e94f5d2adf02a14f7b2d38047
+-- hash: 6e96e7b3e87aaf991d0aabdd39a28361474054a3ee02ac036460a54783c6223b
 
 name:           secp256k1-haskell
 version:        0.4.0
@@ -41,7 +41,7 @@ library
   build-depends:
       QuickCheck
     , base >=4.8 && <5
-    , base16-bytestring
+    , base16-bytestring >=0.1.1.6 && <1.0
     , bytestring
     , cereal
     , deepseq
@@ -65,7 +65,7 @@ test-suite spec
       HUnit
     , QuickCheck
     , base >=4.8 && <5
-    , base16-bytestring
+    , base16-bytestring >=0.1.1.6 && <1.0
     , bytestring
     , cereal
     , deepseq
